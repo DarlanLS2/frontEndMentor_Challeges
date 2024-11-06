@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  background-color: hsl(30, 54%, 90%);
+  color: hsl(24, 5%, 18%);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 38rem;
+  border-radius: 1rem;
+  background-color: #FFF;
+  padding: 2rem
+}
+
+main img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+main h1 {
+  margin: 1rem 0 0 0;
+  font-weight: 400;
+  font-size: 32px;
+  font-family: "Young Serif";
+}
+
+main p {
+  margin: 0.5rem 0 0 0;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+main .tempo {
+  background: hsl(330, 100%, 98%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 2rem 0 0 0;
+  width: 100%;  
+}
+main .tempo h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: hsl(332, 51%, 32%);
+}
+
+main .tempo ul {
+  margin: 0 0 0 2rem;
+}
+main .tempo b {
+  font-size: 13px;
+  font-weight: 700;
+}
+main .tempo li {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0.5rem 0 0 0;
+}
+main .tempo li::marker {
+  color: hsl(332, 51%, 32%); 
+}
+
+main .ingredientes {
+  margin: 1rem 0 0 0;
+  width: 100%;  
+}
+main .ingredientes h2 {
+  font-size: 23px;
+  font-weight: 400;
+  font-family: "Young Serif";
+  color: hsl(14, 45%, 36%);
+}
+main .ingredientes ul {
+  padding: 0 0 0 1.5rem;
+}
+main .ingredientes li {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0.5rem 0 0 0;
+}
+main .ingredientes li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+main hr {
+  border: none;
+  margin: 1.5rem 0;
+  background-color: hsl(30, 18%, 87%);
+  height: 0.5px;
+}
+
+main .instrucoes {
+  width: 100%;  
+}
+main .instrucoes h2 {
+  font-size: 23px;
+  font-weight: 400;
+  font-family: "Young Serif";
+  color: hsl(14, 45%, 36%);
+}
+main .instrucoes ol {
+  padding: 0 0 0 1.5rem;
+}
+main .instrucoes b {
+  color: hsl(24, 5%, 18%);
+  font-weight: 700;
+  font-size: 14px;
+}
+main .instrucoes li {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0.5rem 0 0 0;
+}
+main .instrucoes li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+main .nutricao {
+  width: 100%;  
+}
+main .nutricao h2 {
+  font-size: 23px;
+  font-weight: 400;
+  font-family: "Young Serif";
+  color: hsl(14, 45%, 36%);
+}
+main .nutricao p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0.8rem 0 1rem 0;
+}
+main .nutricao table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+main .nutricao tr {
+  text-align: left;
+  border-bottom: 0.5px solid hsl(30, 18%, 87%);
+}
+main .nutricao .tabEsquerda {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0.8rem;
+}
+main .nutricao .tabDireita {
+  color: hsl(14, 45%, 36%);
+  font-size: 14px;
+  padding: 0.8rem 0 ;
+}
+
+
