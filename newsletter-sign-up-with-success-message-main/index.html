@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<!-- script para mudar a imagem de acordo com a largura da pagina -->
+<script>
+  let mudarImagem = () => {
+    let imagem = document.getElementById("imagem");
+    if (imagem) {
+      let larguraTela = window.innerWidth;
+      if (larguraTela <= 600) {
+        imagem.src = "./assets/images/imagemMobile.svg";
+      } else {
+        imagem.src = "./assets/images/imagemDesktop.svg"
+      }
+    }
+    }
+
+  let validarEmail = () => {
+    document.getElementById("botao").addEventListener("click", () => {
+      let input = document.getElementById("email")
+      let valorEmail = input.value
+      let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      let msgErro = document.getElementById("msgErro")
+      if (regex.test(valorEmail)) {
+        input.classList.remove("placeholder-invalido"); 
+        window.location.href = "./sucess.html"
+        msgErro.style.display = "none";
+      } else {
+        input.classList.add("placeholder-invalido");
+        msgErro.style.display = "flex";
+        input.style.border = "1.5px solid hsl(4, 100%, 67%)";
+        input.style.backgroundColor = "hsl(4, 90%, 89%)"
+        input.style.setProperty('--placeholder-color', 'hsl(4, 100%, 67%)');
+      }
+    })
+  }
+    
+    
+  window.addEventListener("DOMContentLoaded", validarEmail);
+  window.addEventListener("DOMContentLoaded", mudarImagem); // executa a função quando a pagina carregar
+  window.addEventListener("resize", mudarImagem); // executa a função quando o tamanho da tela muda
+</script>
+<body>
+  <main>
+    <img class="imgPrincipal" id="imagem" src="./assets/images/imagemDesktop.svg" alt="imagem">
+    <section>
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="div-lista">
+        <img src="./assets/images/icon-list.svg" alt="icon">
+        <p>Product discovery and building what matters</p>
+      </div>
+      <div class="div-lista">
+        <img src="./assets/images/icon-list.svg" alt="icon">
+        <p>Measuring to ensure updates are a success</p>
+      </div>
+      <div class="div-lista">
+        <img src="./assets/images/icon-list.svg" alt="icon">
+        <p>And much more!</p>
+      </div>
+      <div class="div-input">
+        <p id="msgErro" class="msgErro">Valid email required</p>
+        <label for="email">Email address</label>
+        <input type="text" id="email" name="email" placeholder="email@company.com">
+      </div>
+      <button id="botao">Subscribe to monthly newsletter</button>
+    </section>
+  </main>
+</body>
+</html>
