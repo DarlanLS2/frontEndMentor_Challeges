@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: outfit;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(216, 50%, 16%);
+}
+.card__img {
+  border-radius: 1rem;
+}
+.card__title {
+  margin: 1.5rem 0 1rem 0;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+.card__title:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card__text {
+  margin: 1rem 0;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 15px;
+}
+.card__infos {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.infos__price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.infos__text {
+  margin: 0 0 0 0.5rem;
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 14px;
+}
+.infos__price__icon {
+  width: 10px;
+  height: 14px;
+}
+.infos__price__text {
+  color: hsl(178, 100%, 50%);
+}
+.infos__time {
+  display: flex;
+  flex-direction: row;
+}
+.infos__time__icon {
+  width: 17px;
+  height: 17px;
+}
+.infos__time__text {
+  color: hsl(215, 51%, 70%);
+}
+.card__credits {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+.credits__img {
+  border: 0.5px solid white;
+  border-radius: 2rem;
+  height: 28px;
+}
+.credits__text {
+  margin: 0 0 0 0.5rem;
+  font-size: 13px;
+  color: hsl(215, 51%, 70%);
+}
+.credits__text__link {
+  color: white;
+  cursor: pointer;
+}
+.credits__text__link:hover {
+  color: hsl(178, 100%, 50%);
+}
